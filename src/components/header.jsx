@@ -15,7 +15,7 @@ const Header = () => {
 
 const MarqText=()=>{
    return(
-    <Marquee className="max-md:hidden text-black text-xl font-semibold font-funnel w-36 border-2 rounded-lg border-transparent bg-gradient-to-r from-orange-300 via-zinc-500 to-orange-400 bg-clip-border hover:bg-gradient-to-r hover:from-purple-500 hover:via-pink-600 hover:to-red-600 transition-all duration-500 ease-in-out">
+    <Marquee className="max-md:hidden text-black text-xl font-semibold font-funnel w-36 max-w-32 overflow-hidden border-2 rounded-lg border-transparent bg-gradient-to-r from-orange-300 via-zinc-500 to-orange-400 bg-clip-border hover:bg-gradient-to-r hover:from-purple-500 hover:via-pink-600 hover:to-red-600 transition-all duration-500 ease-in-out">
     INNOWIZION'25 coming soon__
   </Marquee>
    )
