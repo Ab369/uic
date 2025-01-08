@@ -5,3 +5,124 @@
 body{
   background-color: black;
 }
+
+/* For modern browsers */
+::-webkit-scrollbar {
+  display: none; /* Hides the scrollbar in WebKit-based browsers (Chrome, Safari, etc.) */
+}
+
+html {
+  scrollbar-width: none; /* Hides the scrollbar in Firefox */
+  -ms-overflow-style: none; /* Hides the scrollbar in Internet Explorer */
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Neue Montreal", sans-serif;
+}
+
+.pre-loader {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  z-index: 2;
+  color: white;
+  background: 2px solid red;
+
+}
+
+.count {
+  flex: 2;
+  text-align: center;
+  line-height: 1;
+  font-size: 100px;
+  color: white;
+  z-index: 3;
+  position: relative;
+}
+
+.copy {
+  flex: 6;
+  font-family: "PP Editorial Old", serif;
+  font-size: 50px;
+  color: white;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.ml16 {
+  overflow: hidden;
+  position: absolute;
+  padding: 0 1em;
+}
+
+.ml16 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+.loader-bg {
+  position: absolute;
+  display: block;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: -1;
+}
+
+.loader-2 {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url('src/assets/loader.gif') no-repeat 50% 50%;
+  background-size: cover;
+  z-index: -1;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.site-content {
+  position: relative;
+  z-index: -2;
+}
+
+
+.pre-loader {
+
+  pointer-events: none; /* Disable pointer events to avoid blocking interactions */
+}
+
+
+
+.site-content {
+  z-index: 1; /* Ensure it is interactable after the preloader animation */
+}
+
+.site-content.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
