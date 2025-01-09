@@ -18,7 +18,7 @@ const Main=()=>{
 <div className='absolute inset-0 bg-[radial-gradient(75%_75%_at_center_center,rgb(64,64,64,.5)_15%,rgb(16,16,16,.5)_78%,transparent)]'></div>
 
 {/* rounded circle bg */}
-<div className='absolute h-64 w-64 md:h-[500px] md:w-[500px] bg-black rounded-full border border-white/30 top-1/2
+<div className='absolute h-56 w-56 md:h-[500px] md:w-[500px] bg-black rounded-full border border-white/30 top-1/2
              left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[radial-gradient(50%_50%_at_16.8%_18.3%,white,rgb(96,96,96)_37.7%,rgb(16,16,16))] shadow-[-10px_-10px_50px_rgb(255,255,255,.5),-20px_-20px_80px_rgb(255,255,255,.1),0_0_50px_rgb(64,64,64)]'></div>
 
 {/* ring1 */}
@@ -35,7 +35,7 @@ const Main=()=>{
     duration:30,
     ease:'linear'
  }}
- className='absolute h-[344px] w-[344px] md:h-[600px] md:w-[600px] border border-white opacity-20 rounded-full top-1/2
+ className='absolute h-[280px] w-[280px] md:h-[600px] md:w-[600px] border border-white opacity-20 rounded-full top-1/2
              left-1/2 -translate-x-1/2 -translate-y-1/2'>
     <div className='absolute h-2 w-2 md:h-5 md:w-5 bg-white rounded-full top-1/2 left-0 -translate-x-1/2 -translate-y-1/2'></div>
     <div className='absolute h-2 w-2 md:h-5 md:w-5 bg-white rounded-full top-0 left-1/2 -translate-x-1/2 -translate-y-1/2'></div>
@@ -57,7 +57,7 @@ const Main=()=>{
     repeat:Infinity,
     duration:100,
     ease:'linear'
- }} className='absolute h-[444px] w-[444px] md:h-[700px] md:w-[700px] border border-white border-dashed opacity-40 rounded-full top-1/2
+ }} className='absolute h-[350px] w-[350px] md:h-[700px] md:w-[700px] border border-white border-dashed opacity-40 rounded-full top-1/2
              left-1/2 -translate-x-1/2 -translate-y-1/2'></motion.div>
 
 {/* ring3 */}
@@ -73,7 +73,7 @@ const Main=()=>{
     repeat:Infinity,
     duration:30,
     ease:'linear'
- }} className='absolute h-[544px] w-[544px]  md:h-[800px] md:w-[800px] border border-white opacity-20 rounded-full top-1/2
+ }} className='absolute h-[420px] w-[420px]  md:h-[800px] md:w-[800px] border border-white opacity-20 rounded-full top-1/2
              left-1/2 -translate-x-1/2 -translate-y-1/2'>
     <div className='absolute h-2 w-2 md:h-5 md:w-5 bg-white rounded-full top-1/2 left-0 -translate-x-1/2 -translate-y-1/2'></div>
     <div className='absolute h-2 w-2 md:h-5 md:w-5 bg-white rounded-full top-1/2 left-full -translate-x-1/2 -translate-y-1/2'></div>

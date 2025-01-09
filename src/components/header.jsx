@@ -5,8 +5,8 @@ import Marquee from "react-fast-marquee";
 
 const Header = () => {
   return (
-    <div className="bg-black backdrop-blur-md bg-opacity-50 sticky top-4 z-10 flex mx-4 justify-between">
-      <img src={logo} className="w-12" alt="Logo" />
+    <div className="bg-black backdrop-blur-md bg-opacity-50 sticky top-4 z-10 flex md:mx-10 mx-4 justify-between">
+      <img src={logo} className="md:w-12 w-10" alt="Logo" />
       <SlideTabs />
       <MarqText/>
     </div>
@@ -15,7 +15,7 @@ const Header = () => {
 
 const MarqText=()=>{
    return(
-    <Marquee className="max-md:hidden text-black text-xl font-semibold font-funnel w-36 max-w-32 overflow-hidden border-2 rounded-lg border-transparent bg-gradient-to-r from-orange-300 via-zinc-500 to-orange-400 bg-clip-border hover:bg-gradient-to-r hover:from-purple-500 hover:via-pink-600 hover:to-red-600 transition-all duration-500 ease-in-out">
+    <Marquee className="max-md:hidden text-xl font-semibold font-funnel w-36 max-w-36 overflow-hidden border-2 rounded-xl bg-transparent text-white">
     INNOWIZION'25 coming soon__
   </Marquee>
    )
@@ -75,7 +75,7 @@ const SlideTabs = () => {
           }));
         }}
         className={`${
-          isOpen ? "absolute rounded-md top-16 -left-5 w-[400px] h-[90vh]" : "hidden"
+          isOpen ? "absolute rounded-md top-16 -right-2 w-[98vw] h-[90vh]" : "hidden"
         } transition-all duration-500 ease-in-out md:flex w-fit rounded-full border-2 border-black bg-white p-1`}
       >
         <Tab setPosition={setPosition}><motion.button
