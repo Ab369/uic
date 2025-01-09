@@ -5,7 +5,7 @@ import Marquee from "react-fast-marquee";
 
 const Header = () => {
   return (
-    <div className="bg-black backdrop-blur-md bg-opacity-50 sticky top-4 z-10 flex md:mx-10 mx-4 justify-between">
+    <div className="bg-black backdrop-blur-md bg-opacity-50 sticky top-4 z-10 flex md:mx-10 mx-4 justify-between items-center">
       <img src={logo} className="md:w-12 w-10" alt="Logo" />
       <SlideTabs />
       <MarqText/>
@@ -15,9 +15,11 @@ const Header = () => {
 
 const MarqText=()=>{
    return(
-    <Marquee className="max-md:hidden text-xl font-semibold font-funnel w-36 max-w-36 overflow-hidden border-2 rounded-xl bg-transparent text-white">
+    <div className='max-md:hidden'>
+    <Marquee className="p-3 text-xl font-semibold font-funnel w-36 max-w-36 overflow-hidden border-2 rounded-xl bg-transparent text-white">
     INNOWIZION'25 coming soon__
   </Marquee>
+  </div>
    )
  
 }
@@ -75,7 +77,7 @@ const SlideTabs = () => {
           }));
         }}
         className={`${
-          isOpen ? "absolute rounded-md top-16 -right-2 w-[98vw] h-[90vh]" : "hidden"
+          isOpen ? "absolute rounded-md top-16 -right-8 w-[98vw] h-[90vh]" : "hidden"
         } transition-all duration-500 ease-in-out md:flex w-fit rounded-full border-2 border-black bg-white p-1`}
       >
         <Tab setPosition={setPosition}><motion.button
