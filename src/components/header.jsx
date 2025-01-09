@@ -77,7 +77,7 @@ const SlideTabs = () => {
           }));
         }}
         className={`${
-          isOpen ? "absolute rounded-md top-16 -right-8 w-[98vw] h-[90vh]" : "hidden"
+          isOpen ? "absolute rounded-md top-16 -right-2 w-[98vw] h-[90vh]" : "hidden"
         } transition-all duration-500 ease-in-out md:flex w-fit rounded-full border-2 border-black bg-white p-1`}
       >
         <Tab setPosition={setPosition}><motion.button
