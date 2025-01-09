@@ -5,7 +5,7 @@ import Marquee from "react-fast-marquee";
 
 const Header = () => {
   return (
-    <div className="bg-black backdrop-blur-md bg-opacity-50 sticky top-4 z-10 flex md:mx-10 mx-4 justify-between items-center">
+    <div className="bg-black backdrop-blur-md bg-opacity-50 sticky top-0 z-50 flex md:px-10 px-4 lg:pb-8 justify-between items-center py-4">
       <img src={logo} className="md:w-12 w-10" alt="Logo" />
       <SlideTabs />
       <MarqText/>
@@ -35,7 +35,7 @@ const SlideTabs = () => {
   return (
     <div className={`${
         isOpen ? "static" : "relative "
-      } mx-auto flex items-center`}>
+      } mx-auto flex items-center border-2 border-zinc-400 rounded-full`}>
 
     {
         isOpen?<button
@@ -93,7 +93,7 @@ const SlideTabs = () => {
       whileTap={{ scale: 0.85 }}>TEAM</motion.button></Tab>
         
         <Tab setPosition={setPosition}><motion.button
-      whileTap={{ scale: 0.85 }}>CONTACT</motion.button></Tab>
+      whileTap={{ scale: 0.85 }}>GALLERY</motion.button></Tab>
         
 
         <Cursor position={position} />

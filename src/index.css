@@ -14,6 +14,7 @@ body{
 html {
   scrollbar-width: none; /* Hides the scrollbar in Firefox */
   -ms-overflow-style: none; /* Hides the scrollbar in Internet Explorer */
+  scroll-behavior: smooth;
 }
 
 * {
@@ -29,6 +30,8 @@ body {
   font-family: "Neue Montreal", sans-serif;
 }
 
+
+/* preloader styles */
 .pre-loader {
   position: fixed;
   top: 0;
@@ -96,7 +99,7 @@ body {
   top: 0;
   width: 100%;
   height: 100%;
-  background: rgb(0, 0, 0);
+  background: rgb(63, 62, 62);
   background-size: cover;
   z-index: -1;
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
@@ -123,6 +126,5 @@ body {
   opacity: 1;
   transform: translateY(0);
 }
-
-
+/* preloader style ends */
 

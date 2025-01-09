@@ -1,5 +1,6 @@
 import bg from '../assets/stars.png'
 import {motion} from 'framer-motion'
+import ShinyText from '../ui-comp/shinyText';
 
 const Main=()=>{
     return(
@@ -18,7 +19,7 @@ const Main=()=>{
 <div className='absolute inset-0 bg-[radial-gradient(75%_75%_at_center_center,rgb(64,64,64,.5)_15%,rgb(16,16,16,.5)_78%,transparent)]'></div>
 
 {/* rounded circle bg */}
-<div className='absolute h-56 w-56 md:h-[500px] md:w-[500px] bg-black rounded-full border border-white/30 top-1/2
+<div className='absolute h-56 w-56 md:h-[450px] md:w-[450px] bg-black rounded-full border border-white/30 top-1/2
              left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[radial-gradient(50%_50%_at_16.8%_18.3%,white,rgb(96,96,96)_37.7%,rgb(16,16,16))] shadow-[-10px_-10px_50px_rgb(255,255,255,.5),-20px_-20px_80px_rgb(255,255,255,.1),0_0_50px_rgb(64,64,64)]'></div>
 
 {/* ring1 */}
@@ -85,8 +86,8 @@ const Main=()=>{
     <h1 className="leading-10 text-4xl md:text-7xl lg:text-9xl text-center font-bold bg-[radial-gradient(100%_100%_at_top_left,white,white,rgb(64,64,64,.5))] bg-white text-transparent bg-clip-text">
         UNIVERSITY INNOVATION CELL
     </h1>
-    <p className="text-md md:text-xl lg:text-3xl text-white/70 mt-5 text-center text-orange-500">
-        inspiring individuals
+    <p className="text-md md:text-xl lg:text-4xl text-white/70 mt-5 text-center ">
+        <ShinyText text='inspiring individuals' disabled={false} speed={2} className='custom-class' />
     </p>
 </div>
 
