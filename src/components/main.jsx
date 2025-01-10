@@ -24,7 +24,7 @@ const Main=()=>{
     const circleSize = baseSize +yincrease ;
 
     const baseFontSize = isPhone ? 40 : isTablet ? 70 : 102;
-    const fontSizeIncrease = baseFontSize + (isPhone?scrollY/7:scrollY/2) * 0.1;
+    const fontSizeIncrease = baseFontSize + (isPhone?scrollY/7:scrollY/3) * 0.1;
     const resLineHeight = isPhone ? 50 : isTablet ? 70 : 100;
 
 
