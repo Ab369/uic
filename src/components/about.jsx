@@ -22,7 +22,7 @@ export default function About(){
             animateBy="words"
             direction="top"
             className="
-             max-md:hidden text-orange-400 text-3xl md:text-5xl text-center font-extrabold md:font-bold"
+             max-md:hidden text-orange-400 text-3xl md:text-5xl text-center font-semibold md:font-bold"
             />
 
             {/* for phones */}

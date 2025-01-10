@@ -116,7 +116,7 @@ const Main=()=>{
 {/* text section */}
 <motion.div className="hero-text z-10 font-funnel ">
        <motion.h1
-        className="text-center md:font-bold font-extrabold bg-[radial-gradient(100%_100%_at_top_left,white,white,rgb(64,64,64,.5))] bg-orange-400 text-transparent bg-clip-text"
+        className="text-center font-bold bg-[radial-gradient(100%_100%_at_top_left,white,white,rgb(64,64,64,.5))] bg-orange-400 text-transparent bg-clip-text"
         style={{
           fontSize: `${fontSizeIncrease}px`,
           lineHeight: `${resLineHeight}px`,
