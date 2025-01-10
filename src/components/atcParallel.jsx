@@ -77,7 +77,7 @@ const ProductCard = ({ product, translate }) => {
       whileHover={{
         y: -20,
       }}
-      className="group/product h-96 w-[30rem] relative flex-shrink-0"
+      className="group/product md:h-96 h-80 md:w-[30rem] w-[20rem] relative flex-shrink-0"
     >
       <a href={product.link} className="block group-hover/product:shadow-2xl">
         <img

@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { useScroll, useTransform, motion } from "framer-motion";
+import BlurText from "../ui-comp/blurtext";
 
 const Timeline = ({ data }) => {
   const ref = useRef(null);
@@ -21,13 +22,19 @@ const Timeline = ({ data }) => {
   const heightTransform = useTransform(scrollYProgress, [0, 1], [0, height]);
   const opacityTransform = useTransform(scrollYProgress, [0, 0.1], [0, 1]);
 
+  
+
   return (
     <div className="w-full text-white bg-black dark:bg-neutral-950 font-sans md:px-10 px-4 flex max-md:flex-col md:my-4 " ref={containerRef}>
       <div className="max-w-7xl mx-auto py-20 px-4 md:px-8 lg:px-10">
-        <h2 className="text-xl md:text-5xl mb-4  max-w-4xl font-bold text-orange-400">
-          Timeline of UIC in 2024-25
-        </h2>
-        <p className="text-neutral-700 text-sm md:text-lg max-w-sm">
+          <BlurText
+            text="Timeline of UIC in 2024-25"
+            delay={30}
+            animateBy="words"
+            direction="top"
+            className="text-3xl md:text-5xl mb-4  max-w-4xl font-bold text-orange-400"
+            />
+        <p className="text-neutral-700 text-sm md:text-xl max-w-sm">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quod officiis tempora qui, provident repudiandae quae exercitationem placeat aperiam iure.
         </p>
       </div>
