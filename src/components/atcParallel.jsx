@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import { motion, useScroll, useTransform, useSpring } from "framer-motion";
+import BlurText from "../ui-comp/blurtext";
 
 const HeroParallax = ({ gallery }) => {
   const firstRow = gallery.slice(0, 5);
@@ -55,11 +56,19 @@ const HeroParallax = ({ gallery }) => {
   );
 };
 
+
+
 const Header = () => {
   return (
     <div className="max-w-7xl relative mx-auto py-20 md:py-40 px-4 w-full left-0 top-0">
       <h1 className="text-2xl md:text-7xl font-bold dark:text-white">
-        University Innovation Cell <br /> Driving <span className="text-orange-400">innovation</span> over years
+        University Innovation Cell <br /> <BlurText
+            text="Driving Innovation over years"
+            delay={30}
+            animateBy="words"
+            direction="top"
+            className=" text-orange-400"
+            />
       </h1>
       <p className="max-w-2xl text-base md:text-xl mt-8 dark:text-neutral-200">
       We have been fostering a culture of creativity, innovation, and technology forward. Over the years, we’ve hosted impactful events, workshops, and fests to inspire students. These glimpse of the exciting moments that highlight our journey of collaboration and innovation.
