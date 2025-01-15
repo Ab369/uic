@@ -5,7 +5,7 @@ import Marquee from "react-fast-marquee";
 
 const Header = () => {
   return (
-    <div className="bg-black backdrop-blur-md bg-opacity-50 sticky top-0 z-50 flex md:px-10 px-4 lg:pb-8 justify-between items-center py-4">
+    <div className=" backdrop-blur-md bg-opacity-50 sticky top-0 z-50 flex md:px-10 px-4 lg:pb-8 justify-between items-center py-4">
       <img src={logo} className="md:w-12 w-10" alt="Logo" />
       <SlideTabs />
       <MarqText/>

@@ -1,8 +1,5 @@
 import BlurText from "../ui-comp/blurtext";
 import BoxReveal from "../ui-comp/boxReveal";
-import ExpandableCard from "../ui-comp/expndCard";
-
-
 
 export default function ExtendedAbout(){
     return(
@@ -26,11 +23,6 @@ export default function ExtendedAbout(){
          <h1 className="text-5xl md:text-8xl font-semibold text-orange-400 border-b">SESSIONS</h1>
         </BoxReveal>
         </div>
-
-        <div className="relative border-2 h-[50vh]">
-            <h1>Our upcoming events</h1>
-            {/* <ExpandableCard/> */}
-            </div>
         </div>
     )
     

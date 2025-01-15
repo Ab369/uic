@@ -4,7 +4,7 @@ import ShinyText from '../ui-comp/shinyText';
 import { useEffect, useState } from 'react';
 import { useMediaQuery } from "react-responsive";
 
-const Main=()=>{
+const Hero=()=>{
     const [scrollY, setScrollY] = useState(0);
     const isPhone = useMediaQuery({ query: '(max-width: 640px)' });
     const isTablet = useMediaQuery({ query: '(min-width: 641px) and (max-width: 1024px)' });
@@ -116,7 +116,7 @@ const Main=()=>{
 {/* text section */}
 <motion.div className="hero-text z-10 font-funnel ">
        <motion.h1
-        className="text-center font-bold bg-[radial-gradient(100%_100%_at_top_left,white,white,rgb(64,64,64,.5))] bg-orange-400 text-transparent bg-clip-text"
+        className="text-center font-bold max-md:font-extrabold bg-[radial-gradient(100%_100%_at_top_left,white,white,rgb(64,64,64,.5))] bg-orange-400 text-transparent bg-clip-text"
         style={{
           fontSize: `${fontSizeIncrease}px`,
           lineHeight: `${resLineHeight}px`,
@@ -135,4 +135,4 @@ const Main=()=>{
         </motion.section>
     )
 }
-export default Main;
+export default Hero;
