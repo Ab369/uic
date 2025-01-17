@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import { useMediaQuery } from "react-responsive";
 
 const Loader = () => {
+  const isPhone = useMediaQuery({ query: "(max-width: 768px)" })
+
   return (
     <div style={styles.container}>
       <motion.div
@@ -42,7 +45,7 @@ const Loader = () => {
         animate={{ opacity: [0, 1, 0] }}
         transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
       >
-        Entering...
+        Loading...
       </motion.h1>
     </div>
   );
@@ -54,14 +57,14 @@ const styles = {
     flexDirection: "column",
     alignItems: "center",
     justifyContent: "center",
-    height: "120vh",
+    height:'100vh',
     background: "radial-gradient(circle, #000000, #1a1a1a, #000000)",
     overflow: "hidden",
   },
   wormhole: {
     position: "relative",
-    width: "200px",
-    height: "200px",
+    width: "150px",
+    height: "150px",
     display: "flex",
     alignItems: "center",
     justifyContent: "center",

@@ -29,7 +29,7 @@ const Timeline = ({ data }) => {
       <div className="max-w-7xl mx-auto py-20 px-4 md:px-8 lg:px-10">
           <BlurText
             text="Timeline of UIC in 2024-25"
-            delay={30}
+            delay={15}
             animateBy="words"
             direction="top"
             className="text-3xl md:text-5xl mb-4  max-w-4xl font-bold text-orange-400"

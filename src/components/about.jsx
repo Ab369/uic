@@ -1,9 +1,10 @@
 import BlurText from "../ui-comp/blurtext";
 import Squares from "../ui-comp/grids";
+import about from "../data/about";
 
 export default function About(){
     return(
-        <div className="relative max-md:mb-36 md:mt-10">
+        <div className="relative max-md:mb-36 md:mt-10 md:py-10">
         <Squares
         speed={0.5} 
         squareSize={40}
@@ -18,7 +19,7 @@ export default function About(){
 
             <BlurText
             text="ABOUT UNIVERSITY INNOVATION CELL MMMUT"
-            delay={30}
+            delay={15}
             animateBy="words"
             direction="top"
             className="
@@ -28,14 +29,14 @@ export default function About(){
             {/* for phones */}
             <BlurText
             text="ABOUT UIC MMMUT"
-            delay={30}
+            delay={15}
             animateBy="words"
             direction="top"
             className="
              md:hidden text-orange-400 text-3xl md:text-5xl text-center font-semibold md:font-bold"
             />
 
-            <div className="md:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae nemo fugiat excepturi quam quibusdam! Illum quae cum veniam maiores perspiciatis Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam impedit libero architecto ipsum illo delectus deserunt nobis eos possimus! Consequatur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam quas, vero in dolor saepe iure laboriosam quis deserunt esse maiores!</div>
+            <div className="md:text-lg">{about.description}</div>
             </div>
 
             <div className="box flex flex-col gap-3 md:gap-5 md:w-3/4">
@@ -43,25 +44,25 @@ export default function About(){
  
                     <BlurText
                     text="Our Mission"
-                    delay={30}
+                    delay={15}
                     animateBy="words"
                     direction="top"
                     className="text-lg md:text-3xl text-orange-400 font-semibold"
                     />
 
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, repellat obcaecati fuga assumenda suscipit voluptatem? Dignissimos quas rerum delectus nisi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, omnis!</p>
+                    <p>{about.mission}</p>
                 </div>
                 <div className="border-2 p-2 md:p-4 rounded-lg">
 
                     <BlurText
                     text="Our Vision"
-                    delay={30}
+                    delay={15}
                     animateBy="words"
                     direction="top"
                     className="text-lg md:text-3xl text-orange-400 font-semibold"
                     />
 
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, repellat obcaecati fuga assumenda suscipit voluptatem? Dignissimos quas rerum delectus nisi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, quibusdam.</p>
+                    <p>{about.vision}</p>
                 </div>
             </div>
         </div>

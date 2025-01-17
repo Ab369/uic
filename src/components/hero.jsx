@@ -24,7 +24,7 @@ const Hero=()=>{
     const circleSize = baseSize +yincrease ;
 
     const baseFontSize = isPhone ? 40 : isTablet ? 70 : 102;
-    const fontSizeIncrease = baseFontSize + (isPhone?scrollY/7:scrollY/3) * 0.1;
+    const fontSizeIncrease = baseFontSize + (isPhone?scrollY/9:scrollY/3) * 0.1;
     const resLineHeight = isPhone ? 50 : isTablet ? 70 : 100;
 
 
@@ -114,9 +114,9 @@ const Hero=()=>{
 </motion.div>
 
 {/* text section */}
-<motion.div className="hero-text z-10 font-funnel ">
+<motion.div className="hero-text z-10">
        <motion.h1
-        className="text-center font-bold max-md:font-extrabold bg-[radial-gradient(100%_100%_at_top_left,white,white,rgb(64,64,64,.5))] bg-orange-400 text-transparent bg-clip-text"
+        className="text-center font-bold bg-[radial-gradient(100%_100%_at_top_left,white,white,rgb(64,64,64,.5))] bg-orange-400 text-transparent bg-clip-text"
         style={{
           fontSize: `${fontSizeIncrease}px`,
           lineHeight: `${resLineHeight}px`,
@@ -126,7 +126,7 @@ const Hero=()=>{
       >
         UNIVERSITY INNOVATION CELL
       </motion.h1>
-    <p className="text-md md:text-xl lg:text-4xl text-white/70 mt-5 text-center ">
+    <p className="text-lg md:text-xl lg:text-4xl text-white/70 mt-5 text-center transition-all ease-in">
         <ShinyText text='inspiring individuals' disabled={false} speed={2} className='custom-class' />
     </p>
 </motion.div>

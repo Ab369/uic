@@ -12,6 +12,9 @@ module.exports = {
   darkMode: "class",
   theme: {
     extend: {
+      fontFamily: {
+        funnel: ['Funnel Display', 'sans-serif'],
+      },
       keyframes: {
         shine: {
           '0%': { 'background-position': '100%' },

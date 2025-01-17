@@ -1,9 +1,9 @@
 import { useRef, useEffect } from "react";
 
-export default function MagnetLines({
+export default function MagnetLines2({
   rows=4,
   columns=24,
-  containerSize="95vw",
+  containerSize="80vw",
   lineColor="gray",
   lineWidth="0.8vmin",
   lineHeight="10vh",

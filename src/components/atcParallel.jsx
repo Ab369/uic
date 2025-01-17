@@ -25,9 +25,8 @@ const HeroParallax = ({ gallery }) => {
   return (
     <div
       ref={ref}
-      className="text-white h-[300vh] py-40 overflow-hidden antialiased relative flex flex-col self-auto [perspective:800px] [transform-style:preserve-3d] my-64 md:mx-10"
+      className=" text-white md:h-[300vh] overflow-hidden antialiased relative flex flex-col self-auto [perspective:800px] [transform-style:preserve-3d] md:mx-10 my-10"
     >
-      <Header />
       <motion.div
         style={{
           rotateX,
@@ -58,24 +57,24 @@ const HeroParallax = ({ gallery }) => {
 
 
 
-const Header = () => {
-  return (
-    <div className="max-w-7xl relative mx-auto py-20 md:py-40 px-4 w-full left-0 top-0">
-      <h1 className="text-2xl md:text-7xl font-bold dark:text-white">
-        University Innovation Cell <br /> <BlurText
-            text="Driving Innovation over years"
-            delay={30}
-            animateBy="words"
-            direction="top"
-            className=" text-orange-400"
-            />
-      </h1>
-      <p className="max-w-2xl text-base md:text-xl mt-8 dark:text-neutral-200">
-      We have been fostering a culture of creativity, innovation, and technology forward. Over the years, we’ve hosted impactful events, workshops, and fests to inspire students. These glimpse of the exciting moments that highlight our journey of collaboration and innovation.
-      </p>
-    </div>
-  );
-};
+// const Header = () => {
+//   return (
+//     <div className="max-w-7xl relative mx-auto py-20 md:py-40 px-4 w-full left-0 top-0">
+//       <h1 className="text-2xl md:text-7xl font-bold dark:text-white">
+//         University Innovation Cell <br /> <BlurText
+//             text="Driving Innovation over years"
+//             delay={30}
+//             animateBy="words"
+//             direction="top"
+//             className=" text-orange-400"
+//             />
+//       </h1>
+//       <p className="max-w-2xl text-base md:text-xl mt-8 dark:text-neutral-200">
+//       We have been fostering a culture of creativity, innovation, and technology forward. Over the years, we’ve hosted impactful events, workshops, and fests to inspire students. These glimpse of the exciting moments that highlight our journey of collaboration and innovation.
+//       </p>
+//     </div>
+//   );
+// };
 
 const ProductCard = ({ product, translate }) => {
   return (
@@ -88,13 +87,11 @@ const ProductCard = ({ product, translate }) => {
       }}
       className="group/product md:h-96 h-80 md:w-[30rem] w-[20rem] relative flex-shrink-0"
     >
-      <a href={product.link} className="block group-hover/product:shadow-2xl">
         <img
           src={product.thumbnail}
           alt={product.title}
           className="object-cover object-left-top absolute h-full w-full inset-0"
         />
-      </a>
       <div className="absolute inset-0 h-full w-full opacity-0 group-hover/product:opacity-80 bg-black pointer-events-none"></div>
       <h2 className="absolute bottom-4 left-4 opacity-0 group-hover/product:opacity-100 text-white">
         {product.title}

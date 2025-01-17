@@ -2,8 +2,13 @@ import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import logo from '../assets/uic-logo.png';
 import Marquee from "react-fast-marquee";
+import { useMediaQuery } from "react-responsive";
+import { Link } from "react-router-dom";
 
 const Header = () => {
+  const isPhone = useMediaQuery({ query: '(max-width: 600px)' })
+
+  if (isPhone) return <PhoneNavbar/>;
   return (
     <div className=" backdrop-blur-md bg-opacity-50 sticky top-0 z-50 flex md:px-10 px-4 lg:pb-8 justify-between items-center py-4">
       <img src={logo} className="md:w-12 w-10" alt="Logo" />
@@ -16,7 +21,7 @@ const Header = () => {
 const MarqText=()=>{
    return(
     <div className='max-md:hidden'>
-    <Marquee className="p-3 text-xl font-semibold font-funnel w-36 max-w-36 overflow-hidden border-2 rounded-xl bg-transparent text-white">
+    <Marquee className="p-3 text-xl font-semibold w-36 max-w-36 overflow-hidden border-2 rounded-xl bg-transparent text-white">
     INNOWIZION'25 coming soon__
   </Marquee>
   </div>
@@ -80,20 +85,19 @@ const SlideTabs = () => {
           isOpen ? "absolute rounded-md top-16 -right-2 w-[98vw] h-[90vh]" : "hidden"
         } transition-all duration-500 ease-in-out md:flex w-fit rounded-full border-2 border-black bg-white p-1`}
       >
-        <Tab setPosition={setPosition}><motion.button
-      whileTap={{ scale: 0.85 }}>HOME</motion.button></Tab>
-        
-        <Tab setPosition={setPosition}><motion.button
-      whileTap={{ scale: 0.85 }}>ABOUT</motion.button></Tab>
-        
-        <Tab setPosition={setPosition}><motion.button
-      whileTap={{ scale: 0.85 }}>EVENTS</motion.button></Tab>
-        
-        <Tab setPosition={setPosition}><motion.button
-      whileTap={{ scale: 0.85 }}>TEAM</motion.button></Tab>
-        
-        <Tab setPosition={setPosition}><motion.button
-      whileTap={{ scale: 0.85 }}>GALLERY</motion.button></Tab>
+        <Link to='/'><Tab setPosition={setPosition}><motion.button
+      whileTap={{ scale: 0.85 }}>HOME</motion.button></Tab></Link>
+        <Link to='/'><Tab setPosition={setPosition}><motion.button
+      whileTap={{ scale: 0.85 }}>ABOUT</motion.button></Tab></Link>
+        <Link to='/'><Tab setPosition={setPosition}><motion.button
+      whileTap={{ scale: 0.85 }}>EVENTS</motion.button></Tab></Link>
+        <Link to='/team'><Tab setPosition={setPosition}><motion.button
+      whileTap={{ scale: 0.85 }}>TEAM</motion.button></Tab></Link>
+        <Link to='/'><Tab setPosition={setPosition}><motion.button
+      whileTap={{ scale: 0.85 }}>GALLLERY</motion.button></Tab></Link>
+        <Link to='/'><Tab setPosition={setPosition}><motion.button
+      whileTap={{ scale: 0.85 }}>CONTACT</motion.button></Tab></Link>
+      
         
 
         <Cursor position={position} />
@@ -138,3 +142,32 @@ const Cursor = ({ position }) => {
 };
 
 export default Header;
+
+
+
+const PhoneNavbar = () => {
+	return (
+		<>
+			<div className="navbar">
+				<img className="navbar__logo" src={logo} alt="" />
+
+				<div className="navbar__hamburger">
+					<label htmlFor="box">
+						<input type="checkbox" id="box" />
+						<div></div>
+						<div></div>
+						<div></div>
+						<ul className="navbar__unordered-list">
+							<Link to='/'><li>HOME</li></Link>
+							<Link to='/'><li>ABOUT</li></Link>
+							<Link to='/'><li>EVENTS</li></Link>
+							<Link to='/'><li>TEAM</li></Link>
+							<Link to='/'><li>GALLERY</li></Link>
+							<Link to='/'><li>CONTACT</li></Link>
+						</ul>
+					</label>
+				</div>
+			</div>
+		</>
+	);
+};
