@@ -1,4 +1,5 @@
 // ADD only 15
+//USE import for images
 
 const gallery = [
     {

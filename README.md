@@ -1,8 +1,12 @@
-# React + Vite
+# SETUP
+- Fork the repo to your github profile
+- clone the forked repo locally 
+- Open terminal and run: *npm install*
+- Load the site using *npm run dev*
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+- Use mobile first approach to make the site responsive for small devices then move to large screens
+- Keep data,components,pages,ui-comp organised in respective folders
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+- Download Extension for checking phone responsiveness: **Mobile simulator - responsive testing tool**

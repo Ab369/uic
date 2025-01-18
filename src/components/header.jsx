@@ -6,7 +6,7 @@ import { useMediaQuery } from "react-responsive";
 import { Link } from "react-router-dom";
 
 const Header = () => {
-  const isPhone = useMediaQuery({ query: '(max-width: 600px)' })
+  const isPhone = useMediaQuery({ query: '(max-width: 651px)' })
 
   if (isPhone) return <PhoneNavbar/>;
   return (
@@ -143,31 +143,43 @@ const Cursor = ({ position }) => {
 
 export default Header;
 
-
-
 const PhoneNavbar = () => {
-	return (
-		<>
-			<div className="navbar">
-				<img className="navbar__logo" src={logo} alt="" />
+  const handleCollapse = () => {
+    const checkbox = document.getElementById("box");
+    checkbox.checked = false; // Uncheck the checkbox to collapse the navbar
+  };
 
-				<div className="navbar__hamburger">
-					<label htmlFor="box">
-						<input type="checkbox" id="box" />
-						<div></div>
-						<div></div>
-						<div></div>
-						<ul className="navbar__unordered-list">
-							<Link to='/'><li>HOME</li></Link>
-							<Link to='/'><li>ABOUT</li></Link>
-							<Link to='/'><li>EVENTS</li></Link>
-							<Link to='/'><li>TEAM</li></Link>
-							<Link to='/'><li>GALLERY</li></Link>
-							<Link to='/'><li>CONTACT</li></Link>
-						</ul>
-					</label>
-				</div>
-			</div>
-		</>
-	);
+  return (
+    <div className="navbar">
+      <img className="navbar__logo" src={logo} alt="Logo" />
+      <div className="navbar__hamburger">
+        <label htmlFor="box">
+          <input type="checkbox" id="box" />
+          <div></div>
+          <div></div>
+          <div></div>
+          <ul className="navbar__unordered-list">
+            <Link to="/" onClick={handleCollapse}>
+              <li>HOME</li>
+            </Link>
+            <Link to="/" onClick={handleCollapse}>
+              <li>ABOUT</li>
+            </Link>
+            <Link to="/" onClick={handleCollapse}>
+              <li>EVENTS</li>
+            </Link>
+            <Link to="/team" onClick={handleCollapse}>
+              <li>TEAM</li>
+            </Link>
+            <Link to="/" onClick={handleCollapse}>
+              <li>GALLERY</li>
+            </Link>
+            <Link to="/" onClick={handleCollapse}>
+              <li>CONTACT</li>
+            </Link>
+          </ul>
+        </label>
+      </div>
+    </div>
+  );
 };

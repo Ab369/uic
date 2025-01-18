@@ -37,10 +37,11 @@ const App = () => {
       ) : (
         <div className="site-content">
 
-          <div className="header">
+          <div className="md:header">
             <Header />
           </div>
 
+          {/* Routes start here */}
           <AnimatePresence mode='wait'>
           <Routes location={location} key={location.pathname}>
             <Route index element={<Home/>} />
