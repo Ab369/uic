@@ -37,8 +37,8 @@ const App = () => {
       {loading ? (
         <Loader />
       ) : (
-        <div className="site-content">
-          <div className="md:header" ref={headerRef}>
+        <div className="site-content" ref={headerRef}>
+          <div className="md:header" >
             <Header />
           </div>
 
