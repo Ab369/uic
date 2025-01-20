@@ -11,6 +11,8 @@ import ExtendedAbout from "../components/extAbout";
 import FacultyAdvisors from "../components/faculty";
 import UpcomingEvents from "../components/upcomingEvents";
 import MagnetLines2 from "../ui-comp/magnetic";
+import ComingSoon from "../components/comingsoon";
+import Footer from "../components/footer";
 
 const Home = () => {
   const isPhone = useMediaQuery({ query: '(max-width: 600px)' })
@@ -26,6 +28,8 @@ const Home = () => {
           <Timeline data={timelineData} />
           <UpcomingEvents/>
           {isPhone?<MagnetLines2/>:<MagnetLines/>}
+          <ComingSoon/>
+          <Footer/>
         </div>
         </div>
   );

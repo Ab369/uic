@@ -38,7 +38,7 @@ const App = () => {
         <Loader />
       ) : (
         <div className="site-content" ref={headerRef}>
-          <div className="md:header" >
+          <div className="header" >
             <Header />
           </div>
 
