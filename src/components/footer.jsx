@@ -2,6 +2,7 @@ import FooterText from "../ui-comp/footertext";
 import logo from '../assets/uic-logo.png'
 import InteractiveHoverButton from "../ui-comp/hoverbtn";
 import SocialMediaIcons from "../ui-comp/socialmedia";
+
 const Footer=()=>{
     return(
         <div className="flex flex-col">
