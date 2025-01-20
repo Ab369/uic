@@ -1,12 +1,11 @@
 import FooterText from "../ui-comp/footertext";
 import logo from '../assets/uic-logo.png'
 import InteractiveHoverButton from "../ui-comp/hoverbtn";
-import SocialMediaIcons from "../ui-comp/socialmedia";
+import SocialMediaIcons from "../ui-comp/social";
 
 const Footer=()=>{
     return(
         <div className="flex flex-col">
-
         <div className="text-white flex md:flex-row flex-col justify-between md:pr-16 md:pl-10 px-2 mt-5 md:mx-8 mx-2 md:rounded-2xl border-t-2 py-6">
 
             <div className="left flex items-center gap-3 max-md:pl-20">
