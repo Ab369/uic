@@ -5,25 +5,25 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 const SocialMediaIcons = () => {
   return (
     <div className="wrapper">
-      <a href="#" className="button">
+      <a href="" className="button">
         <div className="icon">
           <i className="fab fa-facebook-f"></i>
         </div>
         <span>Facebook</span>
       </a>
-      <a href="#" className="button">
+      <a href="" className="button">
         <div className="icon">
           <i className="fab fa-instagram"></i>
         </div>
         <span>Instagram</span>
       </a>
-      <a href="#" className="button">
+      <a href="" className="button">
         <div className="icon">
           <i className="fab fa-linkedin"></i>
         </div>
         <span>Linkedin</span>
       </a>
-      <a href="#" className="button">
+      <a href="" className="button">
         <div className="icon">
           <i className="fab fa-youtube"></i>
         </div>
