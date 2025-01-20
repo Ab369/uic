@@ -1,13 +1,18 @@
 import { motion } from 'framer-motion';
 import csvd from '../assets/cs.mp4';
+import subscribeMail from '../utils/subscribeEmail';
+import validate from '../utils/validate';
+import { useState } from 'react';
 
 const ComingSoon = () => {
+  const [email,setEmail]=useState(null);
+
   return (
     <motion.div
       className="text-white mt-80 md:gap-0 gap-8 flex md:flex-row flex-col items-center py-10 max-md:px-2 md:justify-around"
       style={{ backgroundColor: 'black' }}
       initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }} // Triggers when the element comes into view
+      whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
     >
       <motion.div
@@ -43,11 +48,22 @@ const ComingSoon = () => {
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1, delay: 0.4, ease: 'easeOut' }}
         >
-          <input type='email' placeholder='Enter your Email' className='bg-black p-2 rounded-xl text-lg'></input>
-          <button className='bg-orange-400 p-2 rounded-xl text-black hover:scale-110 transition-transform duration-500 hover:text-white'>Notify Me</button>
+          <input type='email' placeholder='Enter Your Email' className='bg-black p-2 rounded-xl text-lg' onChange={(e)=>setEmail(e.target.value)}></input>
+          <button className='bg-orange-400 p-2 rounded-xl text-black hover:scale-110 transition-transform duration-500 hover:text-white' onClick={async()=>{
+                  if(validate(email)){
+                    let res=await subscribeMail(email);
+                    if(res==true)
+                      alert('Subscribed for notifcation')
+                    else
+                       alert('Already subscribed or server error!')
+                  }
+                  else{
+                    alert('invalid email')
+                  }
+                  }}>Notify Me</button>
+          </motion.div>
         </motion.div>
       </motion.div>
-    </motion.div>
   );
 };
 

@@ -258,3 +258,9 @@ input[type='checkbox']:checked ~ ul {
   .wrapper .button:nth-child(5) span {
 	color: #ff0000;
   }
+
+
+  /* .Toastify__toast {
+	position:absolute;
+	 bottom:250px;
+  } */
