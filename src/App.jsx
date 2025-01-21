@@ -7,6 +7,9 @@ import Loader from "./components/loader";
 import { AnimatePresence } from "framer-motion";
 import Home from "./pages/home";
 import Team from "./pages/team";
+import Events from "./pages/events";
+import Gallery from "./pages/gallery";
+import Contact from "./pages/contact";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -46,7 +49,10 @@ const App = () => {
           <AnimatePresence mode="wait">
             <Routes location={location} key={location.pathname}>
               <Route index element={<Home />} />
+              <Route path="/events" element={<Events />} />
               <Route path="/team" element={<Team />} />
+              <Route path="/gallery" element={<Gallery />} />
+              <Route path="/contact" element={<Contact />} />
             </Routes>
           </AnimatePresence>
         </div>

@@ -87,13 +87,13 @@ const SlideTabs = () => {
       >
         <Link to='/'><Tab setPosition={setPosition}><motion.button
       whileTap={{ scale: 0.85 }}>HOME</motion.button></Tab></Link>
-        <Link to='/'><Tab setPosition={setPosition}><motion.button
-      whileTap={{ scale: 0.85 }}>ABOUT</motion.button></Tab></Link>
+        <Link to='/events'><Tab setPosition={setPosition}><motion.button
+      whileTap={{ scale: 0.85 }}>EVENTS</motion.button></Tab></Link>
         <Link to='/team'><Tab setPosition={setPosition}><motion.button
       whileTap={{ scale: 0.85 }}>TEAM</motion.button></Tab></Link>
-        <Link to='/'><Tab setPosition={setPosition}><motion.button
+        <Link to='/gallery'><Tab setPosition={setPosition}><motion.button
       whileTap={{ scale: 0.85 }}>GALLLERY</motion.button></Tab></Link>
-        <Link to='/'><Tab setPosition={setPosition}><motion.button
+        <Link to='/contact'><Tab setPosition={setPosition}><motion.button
       whileTap={{ scale: 0.85 }}>CONTACT</motion.button></Tab></Link>
       
         
@@ -160,16 +160,16 @@ const PhoneNavbar = () => {
             <Link to="/" onClick={handleCollapse}>
               <li>HOME</li>
             </Link>
-            <Link to="/" onClick={handleCollapse}>
+            <Link to="/events" onClick={handleCollapse}>
               <li>EVENTS</li>
             </Link>
             <Link to="/team" onClick={handleCollapse}>
               <li>TEAM</li>
             </Link>
-            <Link to="/" onClick={handleCollapse}>
+            <Link to="/gallery" onClick={handleCollapse}>
               <li>GALLERY</li>
             </Link>
-            <Link to="/" onClick={handleCollapse}>
+            <Link to="/contact" onClick={handleCollapse}>
               <li>CONTACT</li>
             </Link>
           </ul>

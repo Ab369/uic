@@ -1,10 +1,10 @@
 import transition from "../utils/transition";
-const Team=()=>{
+const Events=()=>{
     return(
         <div className="text-4xl text-white">
-            Our Team
+            Our Events
         </div>
     )
 }
 
-export default transition(Team);
+export default transition(Events);

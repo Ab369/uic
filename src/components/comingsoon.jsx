@@ -31,7 +31,7 @@ const ComingSoon = () => {
         transition={{ duration: 1, delay: 0.2, ease: 'easeOut' }}
       >
         <div className='flex flex-col text-center'>
-          <h1 className='md:text-8xl text-5xl font-bold'>INNOWIZION'24</h1>
+          <h1 className='md:text-8xl text-5xl font-bold'>INNOWIZION'25</h1>
           <p className='md:text-xl text-orange-400'>The Annual Innovation fest of MMMUT</p>
         </div>
         <motion.h1
