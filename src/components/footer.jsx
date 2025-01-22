@@ -19,7 +19,7 @@ const Footer=()=>{
 
             <div className="flex flex-col lg:gap-8 gap-6 col-span-2">
             <h1>Navigate</h1>
-            <div className="flex flex-col gap-5 md:text-2xl text-xl">
+            <div className="flex flex-col items-center gap-5 md:text-2xl text-xl">
             <InteractiveHoverButton><p onClick={()=>navigate('/events')}>Events</p></InteractiveHoverButton>
             <InteractiveHoverButton><p onClick={()=>navigate('/team')}>Team</p></InteractiveHoverButton>
             <InteractiveHoverButton><p onClick={()=>navigate('/gallery')}>Gallery</p></InteractiveHoverButton>

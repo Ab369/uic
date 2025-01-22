@@ -202,6 +202,12 @@ input[type='checkbox']:checked ~ ul {
   .wrapper .button:hover {
 	width: 200px;
   }
+
+  @media only screen and (max-width: 650px) {
+	.wrapper .button:hover {
+		width:45px
+	  }}
+
   .wrapper .button .icon {
 	display: inline-block;
 	height: 45px;
