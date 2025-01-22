@@ -25,7 +25,7 @@ const Timeline = ({ data }) => {
   
 
   return (
-    <div className="w-full text-white bg-black dark:bg-neutral-950 font-sans md:px-10 px-4 flex max-md:flex-col md:my-4 " ref={containerRef}>
+    <div className="w-full text-white bg-black dark:bg-neutral-950 font-sans md:px-10 px-4 flex flex-col lg:flex-row md:my-4 " ref={containerRef}>
       <div className="max-w-7xl mx-auto py-20 px-4 md:px-8 lg:px-10">
           <BlurText
             text="Timeline of UIC in 2024-25"
@@ -46,7 +46,7 @@ const Timeline = ({ data }) => {
               <div className="h-10 absolute left-3 md:left-3 w-10 rounded-full bg-white dark:bg-black flex items-center justify-center">
                 <div className="h-4 w-4 rounded-full bg-neutral-200 dark:bg-neutral-800 border border-neutral-300 dark:border-neutral-700 p-2" />
               </div>
-              <h3 className="hidden md:block text-xl md:pl-20 md:text-5xl font-bold text-neutral-500 ">
+              <h3 className="hidden md:block text-xl md:pl-20 lg:text-5xl md:text-4xl font-bold text-neutral-500 ">
                 {item.title}
               </h3>
             </div>

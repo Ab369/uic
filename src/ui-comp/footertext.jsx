@@ -44,7 +44,7 @@ const FooterText = () => {
                   : exitIndex === index
                   ? "opacity-0 translate-y-full" // Fade out after timeout
                   : "opacity-0 -translate-y-full" // Inactive text
-              } md:text-7xl text-2xl font-semibold`}
+              } md:text-5xl text-2xl font-semibold`}
             >
               {text}
             </span>

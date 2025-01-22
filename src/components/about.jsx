@@ -23,7 +23,7 @@ export default function About(){
             animateBy="words"
             direction="top"
             className="
-             max-md:hidden text-orange-400 text-3xl md:text-5xl text-center font-semibold md:font-bold"
+             max-md:hidden text-orange-400 text-3xl lg:text-5xl text-center font-semibold md:font-bold"
             />
 
             {/* for phones */}
@@ -39,8 +39,8 @@ export default function About(){
             <div className="md:text-lg">{about.description}</div>
             </div>
 
-            <div className="box flex flex-col gap-3 md:gap-5 md:w-3/4">
-                <div className="border-2 p-2 md:p-4 rounded-lg">
+            <div className="box flex flex-col gap-3 md:gap-5 lg:w-3/4">
+                <div className="border-2 border-gray-400 p-2 md:p-4 rounded-lg">
  
                     <BlurText
                     text="Our Mission"
@@ -52,7 +52,7 @@ export default function About(){
 
                     <p>{about.mission}</p>
                 </div>
-                <div className="border-2 p-2 md:p-4 rounded-lg">
+                <div className="border-2 border-gray-400 p-2 md:p-4 rounded-lg">
 
                     <BlurText
                     text="Our Vision"

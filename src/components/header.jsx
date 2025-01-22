@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
-import logo from '../assets/uic-logo.png';
+import logo from '../assets/uic-iic.png';
 import Marquee from "react-fast-marquee";
 import { useMediaQuery } from "react-responsive";
 import { Link } from "react-router-dom";
@@ -10,8 +10,8 @@ const Header = () => {
 
   if (isPhone) return <PhoneNavbar/>;
   return (
-    <div className=" backdrop-blur-md bg-opacity-50 sticky top-0 z-50 flex md:px-10 px-4  justify-between items-center py-4">
-      <img src={logo} className="md:w-12 w-10" alt="Logo" />
+    <div className=" backdrop-blur-md bg-opacity-50 sticky top-0 z-50 flex lg:px-10 md:pl-4 px-2  justify-between items-center py-4">
+      <img src={logo} className="lg:w-52 md:w-40" alt="Logo" />
       <SlideTabs />
       <MarqText/>
     </div>
@@ -20,7 +20,7 @@ const Header = () => {
 
 const MarqText=()=>{
    return(
-    <div className='max-md:hidden'>
+    <div className='max-lg:hidden'>
     <Marquee className="p-3 text-xl font-semibold w-36 max-w-36 overflow-hidden border-2 rounded-xl bg-transparent text-orange-400">
     INNOWIZION'25 coming soon__
   </Marquee>

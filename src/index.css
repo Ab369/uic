@@ -36,14 +36,14 @@ body {
 .navbar {
 	display: flex;
 	align-items: center;
-	padding: 1rem 1rem;
+	padding: 2rem 1rem;
 	background:rgb(12, 12, 12);
 	box-sizing: border-box;
 	justify-content: space-between;
 }
 
 .navbar__logo {
-	width: 40px;
+	width: 150px;
 	height: auto;
 }
 
@@ -112,7 +112,7 @@ input[type='checkbox']:checked ~ ul {
 		flex-direction: column;
 		position:absolute;
 		right: 0;
-		top: 75px;
+		top: 85px;
 		bottom:0px;
 		height: 100vh;
 		width: 100%;
@@ -187,8 +187,8 @@ input[type='checkbox']:checked ~ ul {
 	  }}
 	  
   .wrapper .button {
-	height: 60px;
-	width: 60px;
+	height: 45px;
+	width: 45px;
 	float: left;
 	text-decoration: none;
 	margin: 0 5px;
@@ -204,13 +204,13 @@ input[type='checkbox']:checked ~ ul {
   }
   .wrapper .button .icon {
 	display: inline-block;
-	height: 60px;
-	width: 60px;
+	height: 45px;
+	width: 45px;
 	color: #000;
 	text-align: center;
 	border-radius: 50px;
 	box-sizing: border-box;
-	line-height: 60px;
+	line-height: 45px;
 	transition: all 0.3s ease-out;
   }
   .wrapper .button:nth-child(1):hover .icon {
@@ -230,7 +230,7 @@ input[type='checkbox']:checked ~ ul {
   }
   .wrapper .button .icon i {
 	font-size: 25px;
-	line-height: 60px;
+	line-height: 45px;
 	transition: all 0.3s ease-out;
   }
   .wrapper .button:hover .icon i {
@@ -239,7 +239,7 @@ input[type='checkbox']:checked ~ ul {
   .wrapper .button span {
 	font-size: 20px;
 	font-weight: 500;
-	line-height: 60px;
+	line-height: 45px;
 	margin-left: 10px;
 	transition: all 0.3s ease-out;
   }

@@ -36,7 +36,7 @@ const UpcomingEvents = () => {
   };
 
   return (
-    <div className="bg-black text-white p-8 rounded-lg max-w-8xl md:mx-14">
+    <div className="bg-black text-white p-8 rounded-lg max-w-8xl lg:mx-14">
       <h2 className="md:text-4xl text-3xl font-bold text-orange-400 text-center mb-6">
         Upcoming Events
       </h2>

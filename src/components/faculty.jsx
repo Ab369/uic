@@ -41,7 +41,7 @@ const FacultyAdvisors = () => {
         delay={15}
         animateBy="words"
         direction="top"
-        className="md:text-4xl text-2xl font-semibold text-orange-400 mt-52 ml-8 md:mt-14 md:mx-96 md:px-24"
+        className="md:text-4xl text-2xl font-semibold text-orange-400 mt-52 md:mt-14 w-full  flex justify-center"
       />
       <motion.div
         className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10"
@@ -57,15 +57,14 @@ const FacultyAdvisors = () => {
             variants={cardVariants}
           >
             <motion.div
-              className="relative mx-auto w-72 h-40 md:w-80 md:h-96 rounded-md overflow-hidden border-4 border-white shadow-md"
+              className="relative mx-auto w-64 h-52 md:w-80 md:h-96 rounded-md overflow-hidden border-4 border-white shadow-md"
               variants={imageVariants}
               animate="float"
             >
-              <div className="absolute inset-0 bg-gradient-to-r from-orange-400 via-orange-400 to-orange-500 opacity-75 blur-xl"></div>
               <img
                 src={advisor.image}
                 alt={advisor.name}
-                className="absolute inset-0 w-full h-full object-cover rounded-full"
+                className="absolute w-full h-full"
               />
             </motion.div>
             <div className="p-4 pt-8">
