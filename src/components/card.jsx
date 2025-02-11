@@ -40,7 +40,7 @@ const Card = ({ imgSrc, name, post, linkedin, github }) => {
   return (
     <motion.div
       ref={cardRef}
-      className="relative w-80  bg-black text-white sm:p-6 p-4 rounded-2xl shadow-lg overflow-hidden"
+      className="relative w-80  bg-[#1e1e1e] text-white sm:p-6 p-4 rounded-2xl shadow-lg overflow-hidden"
       whileHover={{ scale: 1.05, transition: { duration: 0.3 } }}
     >
       <div className="w-full flex justify-center mb-4">
