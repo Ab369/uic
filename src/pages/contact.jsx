@@ -127,16 +127,16 @@ const Contact = () => {
           <div className="mt-5">
             <p className="text-gray-300">Connect with us:</p>
             <div className="flex gap-4 mt-2 justify-center md:justify-start">
-              <a href="https://www.facebook.com//uicmmmut" className="text-orange-500 hover:text-orange-700 transition-all">
+              <a href="" target="_blank" className="text-orange-500 hover:text-orange-700 transition-all">
                 <FacebookIcon fontSize="large" />
               </a>
-              <a href="https://x.com/uicmmmut" className="text-orange-500 hover:text-orange-700  transition-all">
+              <a href="" target="_blank" className="text-orange-500 hover:text-orange-700  transition-all">
                 <XIcon fontSize="large" />
               </a>
-              <a href="https://www.instagram.com/uicmmmut/" className="text-orange-500 hover:text-orange-700 transition-all">
+              <a href="" target="_blank" className="text-orange-500 hover:text-orange-700 transition-all">
                 <InstagramIcon fontSize="large" />
               </a>
-              <a href="https://www.linkedin.com/company/uicmmmut/" className="text-orange-500 hover:text-orange-700 transition-all">
+              <a href="" target="_blank" className="text-orange-500 hover:text-orange-700 transition-all">
                 <LinkedInIcon fontSize="large" />
               </a>
             </div>
