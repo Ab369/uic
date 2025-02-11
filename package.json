@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "npm run dev",
     "lint": "eslint .",
     "preview": "vite preview"
   },
@@ -13,6 +13,7 @@
     "@fortawesome/fontawesome-free": "^6.7.2",
     "@react-spring/web": "^9.7.5",
     "animejs": "^3.2.2",
+    "classnames": "^2.5.1",
     "clsx": "^2.1.1",
     "framer-motion": "^11.16.4",
     "gsap": "^3.12.5",
