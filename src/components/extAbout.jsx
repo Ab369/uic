@@ -22,6 +22,7 @@ export default function ExtendedAbout(){
          <BoxReveal width="100%" boxColor="#fff" duration={0.6}>
          <h1 className="text-5xl md:text-8xl font-semibold text-orange-400 border-b">SESSIONS</h1>
         </BoxReveal>
+         
         </div>
         </div>
     )

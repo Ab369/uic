@@ -1,7 +1,8 @@
 const about={
-    description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae nemo fugiat excepturi quam quibusdam! Illum quae cum veniam maiores perspiciatis Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam impedit libero architecto ipsum illo delectus deserunt nobis eos possimus! Consequatur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam quas, vero in dolor saepe iure laboriosam quis deserunt esse maiores!',
-    mission:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, repellat obcaecati fuga assumenda suscipit voluptatem? Dignissimos quas rerum delectus nisi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, omnis!',
-    vision:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, repellat obcaecati fuga assumenda suscipit voluptatem? Dignissimos quas rerum delectus nisi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, quibusdam.'
+    description:'University Innovation Cell (UIC) at Madan Mohan Malaviya University of Technology (MMMUT), Gorakhpur, is a dynamic platform dedicated to fostering innovation and problem-solving among students.Under the Institution’s Innovation Council (IIC), an initiative by the Ministry of Education’s Innovation Cell (MIC), Government of India, UIC aims to bridge the gap between academics and industry by nurturing creative minds. It serves as a hub for innovators, providing mentorship, industry collaborations, and exposure to cutting-edge technologies. Through various events, fests, and technical sessions, we create an environment that encourages students to develop innovative solutions that contribute to technological and economic growth.',
+    mission:'The mission of the University Innovation Cell is to cultivate a culture of innovation where students are encouraged to think beyond conventional boundaries and develop creative solutions to real-world problems. Strengthening industry-academia collaboration is at the core of our initiatives.',
+
+    vision:'UIC envisions a self-sustaining ecosystem of innovation at MMMUT, where students are encouraged to develop creative solutions to real-world challenges. Our vision is to create an environment where ideas thrive, innovations flourish, and technology becomes the driving force behind academic and economic success.'
 }
 
 export default about;

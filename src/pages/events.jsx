@@ -3,15 +3,10 @@ import { Link } from "react-router-dom";
 import classNames from "classnames";
 import transition from "../utils/transition";
 
-
-import B1 from '../assets/events/BT1.jpeg'
 import B2 from '../assets/events/B2.jpeg'
 import D1 from '../assets/events/D1.jpeg'
-import D2 from '../assets/events/D2.jpeg'
-import D3 from '../assets/events/D3.jpeg'
 import E1 from '../assets/events/E1.jpeg'
 import E2 from '../assets/events/E2.jpeg'
-import inn from '../assets/events/INN.jpeg'
 import inn2 from '../assets/events/INN2.jpeg'
 import Q1 from '../assets/events/Q1.jpeg'
 import Q2 from '../assets/events/Q2.jpeg'
@@ -21,6 +16,9 @@ import Q5 from '../assets/events/Q5.jpeg'
 import T1 from '../assets/events/T1.jpeg'
 import T2 from '../assets/events/T2.jpeg'
 import T3 from '../assets/events/T3.jpeg'
+import ind from '../assets/events/Ind.jpeg'
+import Mp1 from '../assets/events/Mp3.jpeg'
+import Mp2 from '../assets/events/Mp2.jpeg'
 
 const events = [
   // Update image paths to use imports or public folder
@@ -30,17 +28,20 @@ const events = [
     path: "/innowizion",
     description: "Innowizion is a three-day annual fest organized by the University Innovation Cell, dedicated to fostering innovation and creativity. It is designed to challenge participants with technical competitions, brainstorming sessions, and problem-solving activities. The fest serves as a platform for students to showcase their skills, collaborate on innovative ideas, and engage in intellectually stimulating experiences. ",
     details: [
+      "I-Expo",
       "Dotting the eyes",
       "I-Cluminate",
-      "I-Expo",
-      "I-Quiz"
+      "I-Quiz",
+      "Trash Bash",
+      "Elementos",
+      "Tech Tribunal"
     ]
   },
 
 
   {
     title: "Malaviyan Prodigy",
-    image: Q1,
+    image: Mp1,
     path: "/bytegram",
     description: "Malaviyan Prodigy is a flagship event of UIC, designed to bridge the gap between students and accomplished alumni. This event provides a unique opportunity for students to interact with distinguished alumni, gain valuable career guidance, and explore diverse career paths. Through insightful discussions, mentorship sessions, and personal experiences shared by alumni, Malaviyan Prodigy aims to inspire and equip students with the knowledge and motivation to excel in their professional journeys.",
     details: [
@@ -49,15 +50,15 @@ const events = [
       "Helps in growing networks",
       "Industry expert specialists interaction",
 
-      <iframe width="1633" height="300" src="https://www.youtube.com/embed/et1ubNWGj8k" title="ASHUTOSH PANDEY,  SWE  @MAKEMYTRIP | EKANSH SAXENA, SDE @EXPEDIA GROUP | UJJAWAL GUPTA , SDE @ZOMATO" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>,
+      <iframe className="w-80 md:w-full" height="300" src="https://www.youtube.com/embed/et1ubNWGj8k" title="ASHUTOSH PANDEY,  SWE  @MAKEMYTRIP | EKANSH SAXENA, SDE @EXPEDIA GROUP | UJJAWAL GUPTA , SDE @ZOMATO" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>,
 
 
-      <iframe width="1633" height="300" src="https://www.youtube.com/embed/Z3gNvgsZawY" title="VAREESH PRATAP | PRESIDENT @CAMBRIDGE STUDENT UNION | MMMUT BATCH 2016 [ME]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>,
+      <iframe className="w-80 md:w-full" height="300" src="https://www.youtube.com/embed/Z3gNvgsZawY" title="VAREESH PRATAP | PRESIDENT @CAMBRIDGE STUDENT UNION | MMMUT BATCH 2016 [ME]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>,
 
-      <iframe width="1633" height="300" src="https://www.youtube.com/embed/fjRbY5CVAeA" title="ASHUTOSH PANDEY | ISRO SCIENTIST | AIR 324 , GATE CSE | AIR 3 , ISRO&#39;18 |  MMMUT BATCH -2015 [CSE]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>,
+      <iframe className="w-80 md:w-full" height="300" src="https://www.youtube.com/embed/fjRbY5CVAeA" title="ASHUTOSH PANDEY | ISRO SCIENTIST | AIR 324 , GATE CSE | AIR 3 , ISRO&#39;18 |  MMMUT BATCH -2015 [CSE]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>,
 
 
-      <iframe width="1633" height="300" src="https://www.youtube.com/embed/MfbvTCaQv7w" title="ANKITA JAISWAL | M&amp;A CONSULTING @DELOITTE | MBA, IIM LUCKNOW | MMMUT BATCH 2017[ECE]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe className="w-80 md:w-full" height="300" src="https://www.youtube.com/embed/MfbvTCaQv7w" title="ANKITA JAISWAL | M&amp;A CONSULTING @DELOITTE | MBA, IIM LUCKNOW | MMMUT BATCH 2017[ECE]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
     ]
@@ -76,17 +77,17 @@ const events = [
       "Foremost event conducted ",
       "Involves buzzer round",
       "Brainstorming Quizzes",
-      "Exciting and Overwhelming prizes"
+      "Exciting prizes"
     ]
   },
 
   {
     title: "Inductions",
-    image: E1,
+    image: ind,
     path: "/inductions",
     description: "Inductions into the University Innovation Cell (UIC) serve as the gateway for aspiring innovators to become part of the team. The selection process involves form shortlisting based on applicants’ skills and interests, followed by a personal interview to assess their technical knowledge, problem-solving abilities, and passion for innovation. This rigorous process ensures that UIC welcomes dedicated individuals ready to contribute to impactful projects and events like Innowizion.",
     details: [
-      "Form Shortlisting",
+      "Shortlisting",
       "Personal Interview",
       "Wholesome Experience",
       "Interaction with society members"
@@ -148,7 +149,7 @@ const events = [
 
   {
     title: "Gospel Falconry",
-    image: E2,
+    image: E1,
     path: "/inductions",
     description: "Inductions into the University Innovation Cell (UIC) serve as the gateway for aspiring innovators to become part of the team. The selection process involves form shortlisting based on applicants’ skills and interests, followed by a personal interview to assess their technical knowledge, problem-solving abilities, and passion for innovation. This rigorous process ensures that UIC welcomes dedicated individuals ready to contribute to impactful projects and events like Innowizion.",
     details: [
@@ -204,8 +205,8 @@ const DotIndicator = ({ count, activeIndex, onClick }) => (
         className={classNames(
           "w-3 h-3 rounded-full transition-all duration-300 hover:scale-125",
           index === activeIndex 
-            ? "bg-orange-400 scale-125 shadow-[0_0_12px_2px_rgba(255,165,0,0.5)]"
-            : "bg-orange-800 hover:bg-orange-600"
+            ? "bg-white scale-125 shadow-[0_0_12px_2px_rgba(255,165,0,0.5)]"
+            : "bg-gray-500 hover:bg-orange-600"
         )}
       />
     ))}
@@ -221,14 +222,13 @@ const DetailsSection = ({ event }) => (
       <p className="text-lg md:text-xl text-white leading-relaxed max-w-3xl">
         {event.description}
       </p>
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+      <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-6">
         {event.details.map((detail, i) => (
           <div 
             key={i}
             className="p-6 bg-black/50 rounded-xl border border-orange-500/20 backdrop-blur-sm hover:border-orange-500/40 transition-all duration-300"
           >
             <div className="text-orange-400 text-lg font-medium flex items-center">
-              <span className="mr-2 text-xl">▹</span>
               {detail}
             </div>
           </div>

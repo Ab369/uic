@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import logo from '../assets/uic-iic.png';
-import Marquee from "react-fast-marquee";
+import { useLocation } from "react-router-dom";
 import { useMediaQuery } from "react-responsive";
 import { Link } from "react-router-dom";
 import AnimatedButton from "../ui-comp/animatedButton";
@@ -18,62 +18,54 @@ const Header = () => {
   );
 };
 
-const MarqText=()=>{
-   return(
-    <div className='max-lg:hidden'>
-    <Marquee className="p-3 text-xl font-semibold w-36 max-w-36 overflow-hidden border-2 rounded-xl bg-transparent text-orange-400">
-    INNOWIZION'25 coming soon__
-  </Marquee>
-  </div>
-   )
- 
-}
+
 
 const SlideTabs = () => {
+  const { pathname } = useLocation(); // Get the current route
   const [position, setPosition] = useState({
     left: 0,
     width: 0,
     opacity: 0,
   });
   const [isOpen, setIsOpen] = useState(false);
-  
+
   return (
     <div className={`${
         isOpen ? "static" : "relative "
-      } mx-auto flex items-center border-2 border-zinc-400 rounded-full`}>
-
-    {
-        isOpen?<button
-        className="md:hidden p-2 absolute right-2"
-        onClick={() => setIsOpen(!isOpen)}
-      >
-                <svg
-        className="w-6 h-6 text-white"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
+      } mx-auto flex items-center border-2 border-zinc-400 rounded-full`}
+    >
+      {isOpen ? (
+        <button
+          className="md:hidden p-2 absolute right-2"
+          onClick={() => setIsOpen(!isOpen)}
         >
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path>
-        </svg>
-
-      </button>:<button
-        className="md:hidden p-2 absolute left-28"
-        onClick={() => setIsOpen(!isOpen)}
-      >
-        <svg
-          className="w-6 h-6 text-white"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
+          <svg
+            className="w-6 h-6 text-white"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+      ) : (
+        <button
+          className="md:hidden p-2 absolute left-28"
+          onClick={() => setIsOpen(!isOpen)}
         >
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-        </svg>
+          <svg
+            className="w-6 h-6 text-white"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+      )}
 
-      </button>
-    }
-      
       <ul
         onMouseLeave={() => {
           setPosition((pv) => ({
@@ -85,18 +77,15 @@ const SlideTabs = () => {
           isOpen ? "absolute rounded-md top-16 -right-2 w-[98vw] h-[90vh]" : "hidden"
         } transition-all duration-500 ease-in-out md:flex w-fit rounded-full border-2 border-black bg-white p-1`}
       >
-        <Link to='/'><Tab setPosition={setPosition}><motion.button
-      whileTap={{ scale: 0.85 }}>HOME</motion.button></Tab></Link>
-        <Link to='/events'><Tab setPosition={setPosition}><motion.button
-      whileTap={{ scale: 0.85 }}>EVENTS</motion.button></Tab></Link>
-        <Link to='/team'><Tab setPosition={setPosition}><motion.button
-      whileTap={{ scale: 0.85 }}>TEAM</motion.button></Tab></Link>
-        <Link to='/gallery'><Tab setPosition={setPosition}><motion.button
-      whileTap={{ scale: 0.85 }}>GALLLERY</motion.button></Tab></Link>
-        <Link to='/contact'><Tab setPosition={setPosition}><motion.button
-      whileTap={{ scale: 0.85 }}>CONTACT</motion.button></Tab></Link>
-      
-        
+        {["/", "/events", "/team", "/innowizion", "/contact"].map((route, index) => (
+          <Link key={index} to={route}>
+            <Tab setPosition={setPosition} isActive={pathname === route}>
+              <motion.button whileTap={{ scale: 0.85 }}>
+                {route.substring(1).toUpperCase() || "HOME"}
+              </motion.button>
+            </Tab>
+          </Link>
+        ))}
 
         <Cursor position={position} />
       </ul>
@@ -104,7 +93,7 @@ const SlideTabs = () => {
   );
 };
 
-const Tab = ({ children, setPosition }) => {
+const Tab = ({ children, setPosition, isActive }) => {
   const ref = useRef(null);
 
   return (
@@ -112,21 +101,26 @@ const Tab = ({ children, setPosition }) => {
       ref={ref}
       onMouseEnter={() => {
         if (!ref?.current) return;
-
         const { width } = ref.current.getBoundingClientRect();
-
         setPosition({
           left: ref.current.offsetLeft,
           width,
           opacity: 1,
         });
       }}
-      className="relative z-10 block cursor-pointer px-3 py-1.5 text-3xl transition-transform duration-300 ease-in-out transform max-md:hover:scale-110 max-md:hover:text-4xl uppercase text-white mix-blend-difference md:px-5 md:py-3 md:text-lg max-md:text-center max-md:mb-4"
+      className={`relative z-10 block cursor-pointer px-4 py-2 text-lg transition-transform duration-300 ease-in-out transform 
+        max-md:hover:scale-110 uppercase md:px-5 md:py-3 md:text-lg max-md:text-center max-md:mb-4 
+        ${
+          isActive
+            ? "bg-black text-white rounded-full" // Active Tab Styles
+            : "text-black hover:text-white rounded-md"
+        }`}
     >
       {children}
     </li>
   );
 };
+
 
 const Cursor = ({ position }) => {
   return (
@@ -166,8 +160,8 @@ const PhoneNavbar = () => {
             <Link to="/team" onClick={handleCollapse}>
               <li>TEAM</li>
             </Link>
-            <Link to="/gallery" onClick={handleCollapse}>
-              <li>GALLERY</li>
+            <Link to="/innowizion" onClick={handleCollapse}>
+              <li>INNOWIZION</li>
             </Link>
             <Link to="/contact" onClick={handleCollapse}>
               <li>CONTACT</li>

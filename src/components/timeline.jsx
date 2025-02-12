@@ -35,7 +35,7 @@ const Timeline = ({ data }) => {
             className="text-3xl md:text-5xl mb-4  max-w-4xl font-bold text-orange-400"
             />
         <p className="text-neutral-700 text-sm md:text-xl max-w-sm">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quod officiis tempora qui, provident repudiandae quae exercitationem placeat aperiam iure.
+        The University Innovation Cell (UIC) is set to embark on an exciting journey in the academic year 2024-25, focusing on fostering creativity and technological advancements among students.
         </p>
       </div>
       <div ref={ref} className="relative max-w-7xl mx-auto pb-20">

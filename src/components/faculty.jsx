@@ -35,7 +35,7 @@ const imageVariants = {
 
 const FacultyAdvisors = () => {
   return (
-    <div className="bg-black rounded-lg text-center h-full md:mt-8 md:mx-8">
+    <div className="bg-black rounded-lg text-center h-full md:mt-8 md:mx-8 mt-[500px]">
       <BlurText
         text="Meet Our Faculty Advisors"
         delay={15}

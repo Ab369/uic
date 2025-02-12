@@ -1,9 +1,9 @@
 import React, { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 import gsap from "gsap";
 
-const Card = ({ imgSrc, name, post, linkedin, github }) => {
+const Card = ({ imgSrc, name, post, linkedin }) => {
   const cardRef = useRef(null);
   const imgRef = useRef(null);
   const textRef = useRef(null);
@@ -57,24 +57,6 @@ const Card = ({ imgSrc, name, post, linkedin, github }) => {
         <p className="text-sm text-gray-400 mt-1">{post}</p>
       </div>
       <div className="flex justify-center gap-6 mt-4">
-        <motion.a
-          ref={(el) => (iconsRef.current[0] = el)}
-          href={github}
-          target="_blank"
-          rel="noopener noreferrer"
-          whileHover={{ scale: 1.2 }}
-        >
-          <FaGithub className="text-2xl text-gray-300 hover:text-orange-500 transition-all" />
-        </motion.a>
-        <motion.a
-          ref={(el) => (iconsRef.current[1] = el)}
-          href={linkedin}
-          target="_blank"
-          rel="noopener noreferrer"
-          whileHover={{ scale: 1.2 }}
-        >
-          <FaLinkedin className="text-2xl text-gray-300 hover:text-orange-500 transition-all" />
-        </motion.a>
       </div>
     </motion.div>
   );
