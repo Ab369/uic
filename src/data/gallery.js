@@ -1,67 +1,86 @@
 // ADD only 15
-//USE import for images
+import B1 from '../assets/events/BT1.jpeg'
+import B2 from '../assets/events/B2.jpeg'
+import D1 from '../assets/events/D1.jpeg'
+import D2 from '../assets/events/D2.jpeg'
+import D3 from '../assets/events/D3.jpeg'
+import E1 from '../assets/events/E1.jpeg'
+import E2 from '../assets/events/E2.jpeg'
+import inn from '../assets/events/INN.jpeg'
+import inn2 from '../assets/events/INN2.jpeg'
+import Q1 from '../assets/events/Q1.jpeg'
+import Q2 from '../assets/events/Q2.jpeg'
+import Q3 from '../assets/events/Q3.jpeg'
+import Q4 from '../assets/events/Q4.jpeg'
+import Q5 from '../assets/events/Q5.jpeg'
+import T1 from '../assets/events/T1.jpeg'
+import T2 from '../assets/events/T2.jpeg'
+import T3 from '../assets/events/T3.jpeg'
 
 const gallery = [
     {
-      title: "Heading 1",
-      thumbnail: "https://img.freepik.com/free-photo/abstract-autumn-beauty-multi-colored-leaf-vein-pattern-generated-by-ai_188544-9871.jpghttps://img.freepik.com/free-photo/abstract-autumn-beauty-multi-colored-leaf-vein-pattern-generated-by-ai_188544-9871.jpg"   
+      title: "Bytegram",
+      thumbnail: B1   
     },
     {
-      title: "Heading 2",
-      thumbnail: "https://img.freepik.com/free-photo/abstract-autumn-beauty-multi-colored-leaf-vein-pattern-generated-by-ai_188544-9871.jpg",
+      title: "Dotting the Eye",
+      thumbnail:D1
     },
     {
-      title: "Heading 3",
-      thumbnail: "https://img.freepik.com/free-photo/abstract-autumn-beauty-multi-colored-leaf-vein-pattern-generated-by-ai_188544-9871.jpg",
+      title: "Dotting the Eye",
+      thumbnail:D3
     },
     {
-      title: "Heading 4",
-      thumbnail: "https://img.freepik.com/free-photo/abstract-autumn-beauty-multi-colored-leaf-vein-pattern-generated-by-ai_188544-9871.jpg",
+      title: "Quiz",
+      thumbnail: Q2
     },
     {
-      title: "Heading 5",
-      thumbnail: "https://img.freepik.com/free-photo/abstract-autumn-beauty-multi-colored-leaf-vein-pattern-generated-by-ai_188544-9871.jpg",
+      title: "Expo",
+      thumbnail:E1
     },
     {
-      title: "Heading 6",
-      thumbnail: "https://img.freepik.com/free-photo/abstract-autumn-beauty-multi-colored-leaf-vein-pattern-generated-by-ai_188544-9871.jpg",
+      title: "Bytegram",
+      thumbnail:B2
     },
     {
-      title: "Heading 7",
-      thumbnail: "https://img.freepik.com/free-photo/abstract-autumn-beauty-multi-colored-leaf-vein-pattern-generated-by-ai_188544-9871.jpg",
+      title: "Dotting The Eye",
+      thumbnail: D2
     },
     {
-      title: "Heading 8",
-      thumbnail: "https://img.freepik.com/free-photo/abstract-autumn-beauty-multi-colored-leaf-vein-pattern-generated-by-ai_188544-9871.jpg",
+      title: "Innowizion",
+      thumbnail:inn
     },
     {
-      title: "Heading 9",
-      thumbnail: "https://img.freepik.com/free-photo/abstract-autumn-beauty-multi-colored-leaf-vein-pattern-generated-by-ai_188544-9871.jpg",
+      title: "Quiz",
+      thumbnail:Q5
     },
     {
-      title: "Heading 10",
-      thumbnail: "https://img.freepik.com/free-photo/abstract-autumn-beauty-multi-colored-leaf-vein-pattern-generated-by-ai_188544-9871.jpg",
+      title: "Innowizion",
+      thumbnail:inn2
     },
     {
-      title: "Heading 11",
-      thumbnail: "https://img.freepik.com/free-photo/abstract-autumn-beauty-multi-colored-leaf-vein-pattern-generated-by-ai_188544-9871.jpg",
+      title: "Expo",
+      thumbnail: E2
     },
     {
-      title: "Heading 12",
-      thumbnail: "https://img.freepik.com/free-photo/abstract-autumn-beauty-multi-colored-leaf-vein-pattern-generated-by-ai_188544-9871.jpg",
+      title: "Trash Bash",
+      thumbnail: T3
+    },
+    
+    {
+      title: "Quiz",
+      thumbnail:Q1
+    },
+    
+    {
+      title: "Trash Bash",
+      thumbnail:T1
     },
     {
-      title: "Heading 13",
-      thumbnail: "https://img.freepik.com/free-photo/abstract-autumn-beauty-multi-colored-leaf-vein-pattern-generated-by-ai_188544-9871.jpg",
+      title: "Trash Bash",
+      thumbnail:T2
     },
-    {
-      title: "Heading 14",
-      thumbnail: "https://img.freepik.com/free-photo/abstract-autumn-beauty-multi-colored-leaf-vein-pattern-generated-by-ai_188544-9871.jpg",
-    },
-    {
-      title: "Heading 15",
-      thumbnail: "https://img.freepik.com/free-photo/abstract-autumn-beauty-multi-colored-leaf-vein-pattern-generated-by-ai_188544-9871.jpg",
-    },
+    
   ];
 
   export default gallery;

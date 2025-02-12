@@ -4,7 +4,7 @@ import logo from '../assets/uic-iic.png';
 import Marquee from "react-fast-marquee";
 import { useMediaQuery } from "react-responsive";
 import { Link } from "react-router-dom";
-
+import AnimatedButton from "../ui-comp/animatedButton";
 const Header = () => {
   const isPhone = useMediaQuery({ query: '(max-width: 651px)' })
 
@@ -13,7 +13,7 @@ const Header = () => {
     <div className=" backdrop-blur-md bg-opacity-50 sticky top-0 z-50 flex lg:px-10 md:pl-4 px-2  justify-between items-center py-4">
       <img src={logo} className="lg:w-52 md:w-40" alt="Logo" />
       <SlideTabs />
-      <MarqText/>
+      <AnimatedButton/>
     </div>
   );
 };

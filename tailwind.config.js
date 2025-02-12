@@ -33,6 +33,11 @@ module.exports = {
         shine: 'shine 5s linear infinite',
         'star-movement-bottom': 'star-movement-bottom linear infinite alternate',
           'star-movement-top': 'star-movement-top linear infinite alternate',
+        'pulse-slow': 'pulse 10s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+
+      },
+      backdropBlur: {
+        xs: '2px',
       },
     },
   },
