@@ -1,6 +1,8 @@
 import { useEffect, useState, useCallback } from "react";
 import { Link } from "react-router-dom";
 import classNames from "classnames";
+import transition from "../utils/transition";
+
 
 import B1 from '../assets/events/BT1.jpeg'
 import B2 from '../assets/events/B2.jpeg'
@@ -345,4 +347,4 @@ const Events = () => {
   );
 };
 
-export default Events;
+export default transition(Events);
