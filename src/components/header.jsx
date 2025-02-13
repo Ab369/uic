@@ -128,7 +128,7 @@ const Cursor = ({ position }) => {
       animate={{
         ...position,
       }}
-      className="absolute z-0 h-7 rounded-full bg-black md:h-12"
+      className="absolute z-0 h-7 rounded-full bg-gray-400 md:h-12"
     />
   );
 };
