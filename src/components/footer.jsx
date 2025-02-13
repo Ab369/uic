@@ -22,7 +22,7 @@ const Footer=()=>{
             <div className="flex flex-col items-center gap-5 md:text-2xl text-xl">
             <InteractiveHoverButton><p onClick={()=>navigate('/events')}>Events</p></InteractiveHoverButton>
             <InteractiveHoverButton><p onClick={()=>navigate('/team')}>Team</p></InteractiveHoverButton>
-            <InteractiveHoverButton><p onClick={()=>navigate('/gallery')}>Gallery</p></InteractiveHoverButton>
+            <InteractiveHoverButton><p onClick={()=>navigate('/innowizion')}>Innowizion</p></InteractiveHoverButton>
             <InteractiveHoverButton><p onClick={()=>navigate('/contact')}>Contact</p></InteractiveHoverButton>
             </div>
             </div>

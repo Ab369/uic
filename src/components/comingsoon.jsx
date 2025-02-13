@@ -3,10 +3,11 @@ import { useState } from 'react';
 import csvd from '../assets/cs.mp4';
 import subscribeMail from '../utils/subscribeEmail';
 import validate from '../utils/validate';
+import { useNavigate } from 'react-router-dom';
 
 const ComingSoon = () => {
   const [email, setEmail] = useState(null);
-
+  const navigate=useNavigate()
   return (
     <motion.div
       className="text-white mt-80 lg:gap-0 gap-8 flex lg:flex-row flex-col items-center md:pt-40 lg:py-10 py-10 max-md:px-2 md:justify-around"
@@ -51,7 +52,7 @@ const ComingSoon = () => {
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >
-            Coming Soon...
+            28th Feb- 2nd March
           </motion.h1>
 
           
@@ -85,7 +86,10 @@ const ComingSoon = () => {
             Notify Me
           </button>
         </motion.div>
-
+        <button 
+            className='bg-orange-400 p-2 rounded-xl text-black hover:scale-110 transition-transform duration-500 hover:text-white' onClick={()=>navigate('/innowizion')}>
+            Visit Site
+          </button>
       </motion.div>
     </motion.div>
   );
