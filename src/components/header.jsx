@@ -7,13 +7,13 @@ import { Link } from "react-router-dom";
 import AnimatedButton from "../ui-comp/animatedButton";
 const Header = () => {
   const isPhone = useMediaQuery({ query: '(max-width: 651px)' })
-
+  const isLap=useMediaQuery({ query: '(min-width: 1024px)' })
   if (isPhone) return <PhoneNavbar/>;
   return (
     <div className=" backdrop-blur-md bg-opacity-50 sticky top-0 z-50 flex lg:px-10 md:pl-4 px-2  justify-between items-center py-4">
       <img src={logo} className="lg:w-52 md:w-40" alt="Logo" />
       <SlideTabs />
-      <AnimatedButton/>
+      {isLap&&<AnimatedButton/>}
     </div>
   );
 };
