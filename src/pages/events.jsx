@@ -3,22 +3,22 @@ import { Link } from "react-router-dom";
 import classNames from "classnames";
 import transition from "../utils/transition";
 
-import B2 from '../assets/events/B2.jpeg'
-import D1 from '../assets/events/D1.jpeg'
-import E1 from '../assets/events/E1.jpeg'
-import E2 from '../assets/events/E2.jpeg'
-import inn2 from '../assets/events/INN2.jpeg'
-import Q1 from '../assets/events/Q1.jpeg'
-import Q2 from '../assets/events/Q2.jpeg'
-import Q3 from '../assets/events/Q3.jpeg'
-import Q4 from '../assets/events/Q4.jpeg'
-import Q5 from '../assets/events/Q5.jpeg'
-import T1 from '../assets/events/T1.jpeg'
-import T2 from '../assets/events/T2.jpeg'
-import T3 from '../assets/events/T3.jpeg'
-import ind from '../assets/events/Ind.jpeg'
-import Mp1 from '../assets/events/Mp3.jpeg'
-import Mp2 from '../assets/events/Mp2.jpeg'
+import B2 from '../assets/events/B2.webp'
+import D1 from '../assets/events/D1.webp'
+import E1 from '../assets/events/E1.webp'
+import E2 from '../assets/events/E2.webp'
+import inn2 from '../assets/events/INN2.webp'
+import Q1 from '../assets/events/Q1.webp'
+import Q2 from '../assets/events/Q2.webp'
+import Q3 from '../assets/events/Q3.webp'
+import Q4 from '../assets/events/Q4.webp'
+import Q5 from '../assets/events/Q5.webp'
+import T1 from '../assets/events/T1.webp'
+import T2 from '../assets/events/T2.webp'
+import T3 from '../assets/events/T3.webp'
+import ind from '../assets/events/Ind.webp'
+import Mp1 from '../assets/events/Mp3.webp'
+import Mp2 from '../assets/events/Mp2.webp'
 
 const events = [
   // Update image paths to use imports or public folder
