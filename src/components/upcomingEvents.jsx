@@ -79,9 +79,9 @@ const UpcomingEvents = () => {
                   exit="exit"
                 >
                   <p className="text-gray-300 text-lg mb-4">{event.details}</p>
-                  <button className="px-6 py-2 bg-orange-500 text-white rounded-lg font-semibold hover:bg-orange-600 transition">
+                  <a href={event.link} target="_blank" className="px-6 py-2 bg-orange-500 text-white rounded-lg font-semibold hover:bg-orange-600 transition">
                     Register Now
-                  </button>
+                  </a>
                 </motion.div>
               )}
             </AnimatePresence>
