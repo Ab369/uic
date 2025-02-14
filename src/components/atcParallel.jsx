@@ -27,8 +27,8 @@ const HeroParallax = ({ gallery }) => {
   return (
     <div
       ref={ref}
-      className="text-white lg:h-[300vh] overflow-hidden antialiased relative flex flex-col self-auto 
-      [perspective:800px] [transform-style:preserve-3d] md:mx-10 my-10"
+      className="text-white lg:h-[250vh] h-[200vh] overflow-hidden antialiased relative flex flex-col self-auto 
+      [perspective:800px] [transform-style:preserve-3d] md:mx-10 mt-10"
     >
       <motion.div
         style={{
