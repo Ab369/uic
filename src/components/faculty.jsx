@@ -13,16 +13,22 @@ const containerVariants = {
 };
 
 const cardVariants = {
-  hidden: { opacity: 0, scale: 0.8, y: 50 },
+  hidden: { opacity: 0, scale: 0.9, y: 30 },
   visible: {
     opacity: 1,
     scale: 1,
     y: 0,
-    transition: { type: "spring", stiffness: 120, damping: 12 },
+    transition: { type: "spring", stiffness: 100, damping: 15 },
   },
 };
 
 const imageVariants = {
+  hidden: { opacity: 0, scale: 0.9 },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    transition: { duration: 1, ease: "easeOut" },
+  },
   float: {
     y: [0, -10, 0],
     transition: {
@@ -38,10 +44,10 @@ const FacultyAdvisors = () => {
     <div className="bg-black rounded-lg text-center h-full md:mt-8 md:mx-8 mt-[500px]">
       <BlurText
         text="Meet Our Faculty Advisors"
-        delay={15}
+        delay={5}
         animateBy="words"
         direction="top"
-        className="md:text-4xl text-2xl font-semibold text-orange-400 mt-52 md:mt-14 w-full  flex justify-center"
+        className="md:text-4xl text-2xl font-semibold text-orange-400 mt-52 md:mt-14 w-full flex justify-center"
       />
       <motion.div
         className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10"
@@ -59,7 +65,10 @@ const FacultyAdvisors = () => {
             <motion.div
               className="relative mx-auto w-64 h-52 md:w-80 md:h-96 rounded-md overflow-hidden border-4 border-white shadow-md"
               variants={imageVariants}
+              initial="hidden"
+              whileInView="visible"
               animate="float"
+              viewport={{ once: true }}
             >
               <img
                 src={advisor.image}

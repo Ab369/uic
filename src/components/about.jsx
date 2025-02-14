@@ -19,7 +19,7 @@ export default function About(){
 
             <BlurText
             text="ABOUT UNIVERSITY INNOVATION CELL MMMUT"
-            delay={15}
+            delay={5}
             animateBy="words"
             direction="top"
             className="
@@ -29,7 +29,7 @@ export default function About(){
             {/* for phones */}
             <BlurText
             text="ABOUT UIC MMMUT"
-            delay={15}
+            delay={5}
             animateBy="words"
             direction="top"
             className="
@@ -44,7 +44,7 @@ export default function About(){
  
                     <BlurText
                     text="Our Mission"
-                    delay={15}
+                    delay={5}
                     animateBy="words"
                     direction="top"
                     className="text-lg md:text-3xl text-orange-400 font-semibold"
@@ -56,7 +56,7 @@ export default function About(){
 
                     <BlurText
                     text="Our Vision"
-                    delay={15}
+                    delay={5}
                     animateBy="words"
                     direction="top"
                     className="text-lg md:text-3xl text-orange-400 font-semibold"
