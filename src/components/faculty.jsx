@@ -63,7 +63,7 @@ const FacultyAdvisors = () => {
             variants={cardVariants}
           >
             <motion.div
-              className="relative mx-auto w-64 h-52 md:w-80 md:h-96 rounded-md overflow-hidden border-4 border-white shadow-md"
+              className="relative mx-auto w-56 h-52 md:w-80 md:h-96 rounded-md overflow-hidden border-4 border-white shadow-md"
               variants={imageVariants}
               initial="hidden"
               whileInView="visible"

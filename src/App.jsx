@@ -20,6 +20,10 @@ const App = () => {
   const headerRef = useRef(null); // Ref for Header
 
   useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
+  
+  useEffect(() => {
     const timer = setTimeout(() => setLoading(false), 1800);
     return () => {
       clearTimeout(timer);
