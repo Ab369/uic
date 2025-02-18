@@ -13,10 +13,8 @@ const HeroParallax = ({ gallery }) => {
   });
 
   const springConfig = { stiffness: 200, damping: 20, bounce: 50 };
-
   // FIX: Use `useSpring` on `scrollYProgress` directly (ensures it's a MotionValue)
   const smoothScroll = useSpring(scrollYProgress, springConfig);
-
   const translateX = useTransform(smoothScroll, [0, 1], [0, 300]);
   const translateXReverse = useTransform(smoothScroll, [0, 1], [0, -300]);
   const rotateX = useTransform(smoothScroll, [0, 0.2], [15, 0]);

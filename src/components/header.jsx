@@ -77,7 +77,7 @@ const SlideTabs = () => {
           isOpen ? "absolute rounded-md top-16 -right-2 w-[98vw] h-[90vh]" : "hidden"
         } transition-all duration-500 ease-in-out md:flex w-fit rounded-full border-2 border-black bg-white p-1`}
       >
-        {["/", "/events", "/team", "/innowizion", "/contact"].map((route, index) => (
+        {["/", "/events", "/team", "/contact"].map((route, index) => (
           <Link key={index} to={route}>
             <Tab setPosition={setPosition} isActive={pathname === route}>
               <motion.button whileTap={{ scale: 0.85 }}>
@@ -160,7 +160,7 @@ const PhoneNavbar = () => {
             <Link to="/team" onClick={handleCollapse}>
               <li>TEAM</li>
             </Link>
-            <Link to="/innowizion" onClick={handleCollapse}>
+            <Link to='https://innowizion.vercel.app/' onClick={handleCollapse}>
               <li>INNOWIZION</li>
             </Link>
             <Link to="/contact" onClick={handleCollapse}>

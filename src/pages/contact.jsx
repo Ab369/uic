@@ -91,9 +91,9 @@ import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import "../App.css";
 import FacebookIcon from "@mui/icons-material/Facebook";
-import XIcon from "@mui/icons-material/X";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import YoutubeIcon from "@mui/icons-material/Youtube";
 
 const Contact = () => {
   const formRef = useRef(null);
@@ -114,7 +114,7 @@ const Contact = () => {
 
   return (
     <div className="text-white  flex items-center justify-center bg-black py-10 px-5">
-      <div className="w-full max-w-5xl shadow-lg rounded-lg bg-gray-900 sm:p-10 p-5 flex flex-col md:flex-row items-center">
+      <div className="w-full max-w-5xl shadow-lg rounded-lg bg-gray-900 sm:p-10 p-5 flex justify-center items-center">
         {/* Contact Info */}
         <div ref={infoRef} className="md:w-1/2 text-center md:text-left p-5">
           <h3 className="text-2xl font-bold text-orange-500">Let's get in touch</h3>
@@ -127,16 +127,16 @@ const Contact = () => {
           <div className="mt-5">
             <p className="text-gray-300">Connect with us:</p>
             <div className="flex gap-4 mt-2 justify-center md:justify-start">
-              <a href="" target="_blank" className="text-orange-500 hover:text-orange-700 transition-all">
+              <a href="https://www.facebook.com/uicmmmut/" target="_blank" className="text-orange-500 hover:text-orange-700 transition-all">
                 <FacebookIcon fontSize="large" />
               </a>
-              <a href="" target="_blank" className="text-orange-500 hover:text-orange-700  transition-all">
-                <XIcon fontSize="large" />
+              <a href="https://www.youtube.com/@uicmmmut/videos" target="_blank" className="text-orange-500 hover:text-orange-700  transition-all">
+                <YoutubeIcon fontSize="large"/>
               </a>
-              <a href="" target="_blank" className="text-orange-500 hover:text-orange-700 transition-all">
+              <a href="https://www.instagram.com/uicmmmut/?hl=en" target="_blank" className="text-orange-500 hover:text-orange-700 transition-all">
                 <InstagramIcon fontSize="large" />
               </a>
-              <a href="" target="_blank" className="text-orange-500 hover:text-orange-700 transition-all">
+              <a href="https://in.linkedin.com/company/uicmmmut" target="_blank" className="text-orange-500 hover:text-orange-700 transition-all">
                 <LinkedInIcon fontSize="large" />
               </a>
             </div>
@@ -144,7 +144,7 @@ const Contact = () => {
         </div>
 
         {/* Contact Form */}
-        <div ref={formRef} className="md:w-1/2 mt-10 md:mt-0 sm:p-5 w-full">
+        {/* <div ref={formRef} className="md:w-1/2 mt-10 md:mt-0 sm:p-5 w-full">
           <h3 className="text-3xl font-bold text-orange-500 text-center">Contact Us</h3>
           <form className="mt-5 space-y-4">
             <div className="relative">
@@ -160,7 +160,7 @@ const Contact = () => {
               Send
             </button>
           </form>
-        </div>
+        </div> */}
       </div>
     </div>
   );

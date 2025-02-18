@@ -41,13 +41,13 @@ const events = [
     details: "A strategic tribunal-style competition where teams defend assigned companies against industry challenges presented by judges and competitors. The most persuasive and well-prepared team will emerge victorious.",
     link:'https://docs.google.com/forms/d/e/1FAIpQLSce2qzsdaME9-7NDDJA_PEjA2BgghNIJVgLft6VY_i_d9LCvg/viewform'
   },
-  {
-    id: 6,
-    title: "Elementos",
-    date: "February, 2025",
-    details: "An engaging event where participants take part in games inspired by various elements, competing for exciting prizes.",
-    link:'#'
-  },
+  // {
+  //   id: 6,
+  //   title: "Elementos",
+  //   date: "February, 2025",
+  //   details: "An engaging event where participants take part in games inspired by various elements, competing for exciting prizes.",
+  //   link:'#'
+  // },
   
 ];
 
