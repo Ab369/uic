@@ -93,7 +93,6 @@ import "../App.css";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import YoutubeIcon from "@mui/icons-material/Youtube";
 
 const Contact = () => {
   const formRef = useRef(null);
@@ -130,9 +129,9 @@ const Contact = () => {
               <a href="https://www.facebook.com/uicmmmut/" target="_blank" className="text-orange-500 hover:text-orange-700 transition-all">
                 <FacebookIcon fontSize="large" />
               </a>
-              <a href="https://www.youtube.com/@uicmmmut/videos" target="_blank" className="text-orange-500 hover:text-orange-700  transition-all">
+              {/* <a href="https://www.youtube.com/@uicmmmut/videos" target="_blank" className="text-orange-500 hover:text-orange-700  transition-all">
                 <YoutubeIcon fontSize="large"/>
-              </a>
+              </a> */}
               <a href="https://www.instagram.com/uicmmmut/?hl=en" target="_blank" className="text-orange-500 hover:text-orange-700 transition-all">
                 <InstagramIcon fontSize="large" />
               </a>
