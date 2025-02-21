@@ -87,7 +87,7 @@ const ComingSoon = () => {
           </button>
         </motion.div>
         <button 
-            className='bg-orange-400 p-2 rounded-xl text-black hover:scale-110 transition-transform duration-500 hover:text-white' onClick={()=>window.location.href='https://innowizion.vercel.app/'}>
+            className='bg-orange-400 p-2 rounded-xl text-black hover:scale-110 transition-transform duration-500 hover:text-white'  onClick={() => window.open('https://innowizion.vercel.app/', '_blank', 'noopener,noreferrer')}>
             Visit Site
           </button>
       </motion.div>

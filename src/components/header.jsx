@@ -160,7 +160,8 @@ const PhoneNavbar = () => {
             <Link to="/team" onClick={handleCollapse}>
               <li>TEAM</li>
             </Link>
-            <Link to='https://innowizion.vercel.app/' onClick={handleCollapse}>
+            <Link to='https://innowizion.vercel.app/'  target="_blank"
+  rel="noopener noreferrer" onClick={handleCollapse}>
               <li>INNOWIZION</li>
             </Link>
             <Link to="/contact" onClick={handleCollapse}>

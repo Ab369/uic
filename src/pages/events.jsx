@@ -237,7 +237,8 @@ const DetailsSection = ({ event }) => (
       <div className="flex gap-4">
         {event.title === "Innowizion" && (
           <Link
-            to='https://innowizion.vercel.app/' // Update this path as needed
+            to='https://innowizion.vercel.app/'  target="_blank"
+            rel="noopener noreferrer" // Update this path as needed
             className="inline-flex items-center mt-8 px-8 py-3 border-2 border-orange-400/50 hover:border-orange-400/80 bg-orange-400/5 hover:bg-orange-400/10 text-orange-400 rounded-lg text-md font-semibold transition-all duration-300 group"
           >
             Visit Innowizion'25
